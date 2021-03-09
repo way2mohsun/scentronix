@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const fs = require('fs');
 var sort = require('./sort');
+
 let load_balancer = JSON.parse(fs.readFileSync('load-balancer.json')); // Load servers
 
 let requests = load_balancer.map(o => fetch(o.url, { timeout: 5000 })
