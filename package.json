@@ -12,8 +12,8 @@
   "license": "free",
   "repository": "https://github.com/way2mohsun/scentronix.git",
   "scripts": {
-    "start": "nodemon --exec babel-node src/server",
-    "start-pro": "node ./bin/www",
+    "start": "nodemon --exec babel-node requester",
+    "start-pro": "node requester",
     "test": "jest --silent",
     "test-compact": "jest 2>&1 | grep 'FAIL'",
     "commit": "git-cz"

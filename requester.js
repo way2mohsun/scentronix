@@ -28,7 +28,7 @@ Promise.all(requests).then(function (responses) {
 function findServer(responses) {
     responses = sort(responses, 'priority'); // Sort by priority
     let active = {};
-    for (res in responses) {
+    for (let res in responses) {
         if (responses[res].status) {
             return responses[res];
         }
