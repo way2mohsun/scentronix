@@ -1,0 +1,27 @@
+{
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "jest-expect-message"
+    ]
+  },
+  "name": "scentronix",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Mohsen Ghamgosar",
+  "license": "free",
+  "repository": "https://github.com/way2mohsun/scentronix.git",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server",
+    "start-pro": "node ./bin/www",
+    "test": "jest --silent",
+    "test-compact": "jest 2>&1 | grep 'FAIL'",
+    "commit": "git-cz"
+  },
+  "dependencies": {
+    "babel-jest": "^26.6.3",
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3"
+  }
+}

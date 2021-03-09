@@ -1,0 +1,18 @@
+[
+    {
+        "url": "http://localhost:3001",
+        "priority": 1
+    },
+    {
+        "url": "http://localhost:3004",
+        "priority": 4
+    },
+    {
+        "url": "http://localhost:3003",
+        "priority": 3
+    },
+    {
+        "url": "http://localhost:3002",
+        "priority": 2
+    }
+]
